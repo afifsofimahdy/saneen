@@ -1,190 +1,256 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Susu Kambing Saanen - 22 Manfaat</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Susu Kambing Saanen - Sehat Alami, Kaya Manfaat</title>
+
   <style>
+    :root {
+      --primary: #2e7d32;
+      --secondary: #66bb6a;
+      --bg: #f6f8f7;
+      --text: #1f2933;
+      --muted: #6b7280;
+      --card: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.7;
       margin: 0;
-      padding: 0;
-      background: #f7f7f7;
-      color: #222;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
     }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, #2e7d32, #66bb6a);
+      color: #fff;
+      padding: 64px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      margin: 0 0 12px;
+      font-size: 36px;
+      letter-spacing: 1px;
+    }
+
+    .hero p {
+      margin: 0 auto 24px;
+      max-width: 700px;
+      font-size: 18px;
+      opacity: 0.95;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background: #ffffff;
+      color: var(--primary);
+      padding: 14px 28px;
+      border-radius: 999px;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    /* CONTAINER */
     .container {
-      max-width: 900px;
+      max-width: 1000px;
       margin: 0 auto;
-      background: #fff;
-      padding: 24px;
+      padding: 24px 20px 60px;
     }
-    h1, h2, h3 {
-      color: #2c3e50;
+
+    /* SECTION */
+    .section {
+      margin-top: 40px;
     }
-    h1 {
+
+    .section h2 {
+      color: var(--primary);
+      margin-bottom: 16px;
+      font-size: 28px;
       text-align: center;
-      margin-bottom: 8px;
     }
-    .subtitle {
-      text-align: center;
-      color: #555;
-      margin-bottom: 24px;
-    }
-    p {
-      margin-bottom: 12px;
+
+    .section p {
+      color: #374151;
       text-align: justify;
     }
-    ol {
-      padding-left: 20px;
+
+    /* INFO BOX */
+    .info-box {
+      background: var(--card);
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+      margin-top: 24px;
     }
-    li {
-      margin-bottom: 16px;
+
+    /* GRID MANFAAT */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 24px;
     }
-    .footer {
-      margin-top: 40px;
-      padding-top: 16px;
-      border-top: 1px solid #ddd;
+
+    .card {
+      background: var(--card);
+      border-radius: 14px;
+      padding: 20px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+      transition: 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 8px;
+      color: var(--primary);
+      font-size: 18px;
+    }
+
+    .card p {
+      margin: 0;
+      font-size: 14.5px;
+      color: #4b5563;
+      text-align: justify;
+    }
+
+    /* CONTACT */
+    .contact {
+      margin-top: 48px;
+      background: linear-gradient(135deg, #2e7d32, #66bb6a);
+      color: #fff;
+      padding: 32px 20px;
+      border-radius: 16px;
       text-align: center;
-      color: #555;
+    }
+
+    .contact h2 {
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+
+    .contact p {
+      margin-bottom: 20px;
+      opacity: 0.95;
+    }
+
+    .wa-button {
+      display: inline-block;
+      background: #ffffff;
+      color: #2e7d32;
+      padding: 14px 28px;
+      border-radius: 999px;
+      font-weight: bold;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 24px;
+      color: var(--muted);
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
-  <div class="container">
+
+  <!-- HERO -->
+  <section class="hero">
     <h1>SUSU KAMBING SAANEN</h1>
-    <p class="subtitle">Manfaat Susu Kambing Saanen, Kuatkan Imun (Jurnal STKIPMB)</p>
-
     <p>
-      Susu kambing Saanen adalah produk hewani yang berasal dari kambing ras Saanen, salah satu ras kambing perah yang paling terkenal dan banyak dibudidayakan di seluruh dunia karena produktivitas susunya yang tinggi.
+      Minuman sehat alami dengan 22 manfaat luar biasa untuk daya tahan tubuh, pencernaan, tulang, kulit, dan kesehatan menyeluruh.
+      Direferensikan dari Jurnal STKIPMB.
     </p>
+    <a class="cta-button" href="#order">Pesan Sekarang via WhatsApp</a>
+  </section>
 
-    <p>
-      Susu ini memiliki komposisi nutrisi yang unik, seringkali dibandingkan dengan susu sapi namun dengan beberapa karakteristik yang berbeda secara signifikan, menjadikannya pilihan menarik bagi individu dengan kebutuhan diet atau kondisi kesehatan tertentu.
-    </p>
+  <div class="container">
 
-    <p>
-      Perbedaan ini meliputi ukuran globul lemak yang lebih kecil, kadar laktosa yang lebih rendah, serta profil protein dan asam lemak berbeda, yang secara kolektif berkontribusi pada kemudahan pencernaan dan potensial manfaat kesehatannya yang beragam.
-    </p>
+    <!-- DESKRIPSI -->
+    <section class="section">
+      <h2>Apa itu Susu Kambing Saanen?</h2>
+      <div class="info-box">
+        <p>
+          Susu kambing Saanen adalah produk hewani yang berasal dari kambing ras Saanen, salah satu ras kambing perah paling terkenal di dunia karena produktivitas susunya yang tinggi.
+        </p>
+        <p>
+          Susu ini memiliki komposisi nutrisi yang unik, sering dibandingkan dengan susu sapi, namun dengan karakteristik berbeda seperti ukuran globul lemak yang lebih kecil, kadar laktosa lebih rendah, serta profil protein dan asam lemak yang berbeda.
+        </p>
+        <p>
+          Perbedaan ini membuat susu kambing Saanen lebih mudah dicerna dan memiliki potensi manfaat kesehatan yang sangat beragam.
+        </p>
+      </div>
+    </section>
 
-    <h2>Manfaat Susu Kambing Saanen</h2>
+    <!-- MANFAAT -->
+    <section class="section">
+      <h2>22 Manfaat Utama Susu Kambing Saanen</h2>
 
-    <ol>
-      <li>
-        <strong>Mudah dicerna</strong><br>
-        Susu kambing Saanen dikenal memiliki daya cerna yang lebih tinggi dibandingkan susu sapi, terutama karena ukuran globul lemaknya yang lebih kecil. Struktur ini memungkinkan enzim pencernaan bekerja lebih efisien, sehingga mengurangi beban pada sistem pencernaan dan meminimalkan ketidaknyamanan seperti kembung atau diare.
-      </li>
+      <div class="grid">
+        <div class="card"><h3>1. Mudah Dicerna</h3><p>Ukuran globul lemak lebih kecil dan curd lebih lembut sehingga ramah untuk pencernaan.</p></div>
+        <div class="card"><h3>2. Laktosa Lebih Rendah</h3><p>Lebih toleran bagi yang sensitif terhadap laktosa.</p></div>
+        <div class="card"><h3>3. Protein Lebih Bersahabat</h3><p>Lebih rendah alpha-s1-casein pemicu alergi.</p></div>
+        <div class="card"><h3>4. Kaya Nutrisi</h3><p>Mengandung kalsium, fosfor, vitamin A, B2, dan kalium.</p></div>
+        <div class="card"><h3>5. Menjaga Kesehatan Tulang</h3><p>Membantu mencegah osteoporosis dan menjaga kepadatan tulang.</p></div>
+        <div class="card"><h3>6. Anti Inflamasi</h3><p>Berpotensi membantu mengurangi peradangan dalam tubuh.</p></div>
+        <div class="card"><h3>7. Sumber Energi Cepat (MCT)</h3><p>Asam lemak rantai menengah mudah diubah menjadi energi.</p></div>
+        <div class="card"><h3>8. Meningkatkan Imunitas</h3><p>Mengandung selenium, vitamin A, dan riboflavin.</p></div>
+        <div class="card"><h3>9. Menyehatkan Kulit</h3><p>Membantu menjaga kelembapan dan regenerasi kulit.</p></div>
+        <div class="card"><h3>10. Baik untuk Pencernaan</h3><p>Mengandung prebiotik alami untuk usus.</p></div>
+        <div class="card"><h3>11. Menjaga Kesehatan Jantung</h3><p>Mengandung CLA dan kalium.</p></div>
+        <div class="card"><h3>12. Bantu Kontrol Berat Badan</h3><p>Protein tinggi memberi rasa kenyang lebih lama.</p></div>
+        <div class="card"><h3>13. Bantu Penyerapan Zat Besi</h3><p>Mendukung pencegahan anemia.</p></div>
+        <div class="card"><h3>14. Kaya Antioksidan</h3><p>Melindungi sel dari radikal bebas.</p></div>
+        <div class="card"><h3>15. Menjaga Fungsi Saraf</h3><p>Mendukung kesehatan otak dan saraf.</p></div>
+        <div class="card"><h3>16. Baik untuk Pemulihan Otot</h3><p>Mendukung perbaikan dan pertumbuhan otot.</p></div>
+        <div class="card"><h3>17. Menjaga Elektrolit</h3><p>Membantu keseimbangan cairan tubuh.</p></div>
+        <div class="card"><h3>18. Potensi Anti Kanker</h3><p>Berdasarkan studi awal komponen bioaktifnya.</p></div>
+        <div class="card"><h3>19. Baik untuk Anak-anak</h3><p>Mendukung pertumbuhan dan perkembangan.</p></div>
+        <div class="card"><h3>20. Alternatif Susu Sapi</h3><p>Lebih mudah ditoleransi bagi yang sensitif.</p></div>
+        <div class="card"><h3>21. Menjaga Kesehatan Mata</h3><p>Kaya vitamin A untuk penglihatan.</p></div>
+        <div class="card"><h3>22. Mendukung Metabolisme</h3><p>Membantu metabolisme energi dan nutrisi.</p></div>
+      </div>
+    </section>
 
-      <li>
-        <strong>Kandungan laktosa lebih rendah</strong><br>
-        Bagi individu yang mengalami intoleransi laktosa, susu kambing Saanen sering menjadi alternatif yang lebih baik karena kandungan laktosanya lebih rendah dibanding susu sapi.
-      </li>
+    <!-- CONTACT -->
+    <section class="contact" id="order">
+      <h2>Pesan Sekarang</h2>
+      <p>
+        Tertarik mencoba manfaat luar biasa Susu Kambing Saanen?<br>
+        Hubungi kami sekarang untuk informasi dan pemesanan.
+      </p>
+      <a class="wa-button" href="https://wa.me/6283831858627" target="_blank">
+        Chat WhatsApp: 083831858627
+      </a>
+    </section>
 
-      <li>
-        <strong>Profil protein yang berbeda</strong><br>
-        Susu kambing Saanen memiliki kadar alpha-s1-casein yang lebih rendah, sehingga lebih toleran bagi sebagian orang yang sensitif terhadap protein susu sapi.
-      </li>
-
-      <li>
-        <strong>Kaya nutrisi esensial</strong><br>
-        Mengandung kalsium, fosfor, riboflavin (vitamin B2), kalium, dan vitamin A yang penting untuk berbagai fungsi tubuh.
-      </li>
-
-      <li>
-        <strong>Mendukung kesehatan tulang</strong><br>
-        Kandungan kalsium dan fosfor membantu menjaga kepadatan dan kekuatan tulang serta mencegah osteoporosis.
-      </li>
-
-      <li>
-        <strong>Potensi anti-inflamasi</strong><br>
-        Beberapa penelitian awal menunjukkan susu kambing memiliki sifat anti-inflamasi yang dapat membantu mengurangi peradangan dalam tubuh.
-      </li>
-
-      <li>
-        <strong>Sumber asam lemak rantai menengah (MCTs)</strong><br>
-        MCTs lebih mudah dicerna dan cepat diubah menjadi energi, cocok untuk kebutuhan energi cepat.
-      </li>
-
-      <li>
-        <strong>Meningkatkan sistem kekebalan tubuh</strong><br>
-        Kandungan selenium, vitamin A, dan riboflavin membantu mendukung sistem imun.
-      </li>
-
-      <li>
-        <strong>Mendukung kesehatan kulit</strong><br>
-        Kandungan asam lemak, vitamin A, dan asam laktat membantu menjaga kelembapan dan regenerasi kulit.
-      </li>
-
-      <li>
-        <strong>Kaya prebiotik alami</strong><br>
-        Mengandung oligosakarida yang mendukung pertumbuhan bakteri baik di usus.
-      </li>
-
-      <li>
-        <strong>Baik untuk kesehatan jantung</strong><br>
-        Mengandung CLA dan asam lemak tak jenuh ganda serta kalium untuk membantu menjaga tekanan darah.
-      </li>
-
-      <li>
-        <strong>Membantu manajemen berat badan</strong><br>
-        Protein meningkatkan rasa kenyang dan MCTs menyediakan energi yang efisien.
-      </li>
-
-      <li>
-        <strong>Meningkatkan penyerapan zat besi</strong><br>
-        Dapat membantu meningkatkan penyerapan zat besi dan tembaga dari makanan lain.
-      </li>
-
-      <li>
-        <strong>Sumber antioksidan</strong><br>
-        Mengandung selenium dan vitamin A untuk melawan radikal bebas.
-      </li>
-
-      <li>
-        <strong>Mendukung fungsi saraf</strong><br>
-        Vitamin B kompleks seperti riboflavin dan niasin penting untuk fungsi saraf dan produksi energi.
-      </li>
-
-      <li>
-        <strong>Baik untuk pemulihan otot</strong><br>
-        Protein berkualitas tinggi membantu perbaikan dan pertumbuhan otot setelah aktivitas fisik.
-      </li>
-
-      <li>
-        <strong>Menjaga keseimbangan elektrolit</strong><br>
-        Mengandung kalium, natrium, dan klorida untuk menjaga keseimbangan cairan tubuh.
-      </li>
-
-      <li>
-        <strong>Potensi anti-kanker</strong><br>
-        Beberapa studi awal menunjukkan komponen bioaktif seperti CLA berpotensi menghambat pertumbuhan sel kanker.
-      </li>
-
-      <li>
-        <strong>Mendukung pertumbuhan dan perkembangan anak</strong><br>
-        Menyediakan protein, kalsium, vitamin, dan mineral penting untuk tumbuh kembang anak.
-      </li>
-
-      <li>
-        <strong>Alternatif untuk intoleransi protein susu sapi</strong><br>
-        Karena perbedaan profil protein, susu kambing sering lebih mudah ditoleransi.
-      </li>
-
-      <li>
-        <strong>Meningkatkan kesehatan mata</strong><br>
-        Kandungan vitamin A penting untuk penglihatan dan kesehatan kornea.
-      </li>
-
-      <li>
-        <strong>Mendukung fungsi metabolik</strong><br>
-        Membantu metabolisme energi, penyerapan nutrisi, dan menjaga berat badan tetap sehat.
-      </li>
-    </ol>
-
-    <div class="footer">
-      <p>Kontak: 083831858627</p>
-      <p>&copy; Susu Kambing Saanen</p>
-    </div>
   </div>
+
+  <footer>
+    © 2026 Susu Kambing Saanen • Informasi Kesehatan & Produk Alami
+  </footer>
+
 </body>
 </html>
